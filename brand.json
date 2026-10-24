@@ -1,0 +1,105 @@
+{
+  "_readme": "مصدر الحقيقة الوحيد للهوية. عدّل هنا فقط. القيم الوقتية (runtime) تصل للتطبيق عبر /v1/config وعبر الحزمة الاحتياطية الموقّعة. القيم المرتبطة بالبناء (اسم الأيقونة، معرّف الحزمة) تُطبَّق بـ: python tools/apply_brand.py",
+  "schema_version": 1,
+  "app": {
+    "name_ar": "تواصل",
+    "name_en": "Tawasol",
+    "launcher_label": "تواصل",
+    "tagline_ar": "جسر بين ابن الهيثم وMoodle",
+    "android_application_id": "com.obour.portal",
+    "ios_bundle_id": "com.obour.portal",
+    "deep_link_scheme": "oitawasol"
+  },
+  "institute": {
+    "name_ar": "معاهد العبور",
+    "name_short_ar": "العبور",
+    "support_email": "support@example.com",
+    "support_phone": "",
+    "consent_statement_ar": "يسجّل التطبيق الدخول إلى بوابة الطالب نيابةً عنك، وذلك بعلم إدارة المعهد."
+  },
+  "assistant": {
+    "name_ar": "نور",
+    "role_label_ar": "مساعد آلي",
+    "greeting_ar": "اسألني عن درجاتك أو افتح أي خدمة",
+    "disclaimer_ar": "الردود تُولَّد آليًا وقد تحتوي أخطاء. الدرجات الرسمية في بوابة الطالب."
+  },
+  "systems": {
+    "sis": {
+      "name_ar": "ابن الهيثم",
+      "base_url": "https://student.oi.edu.eg",
+      "password_change_url": "https://student.oi.edu.eg"
+    },
+    "moodle": {
+      "name_ar": "Moodle",
+      "base_url": "https://elearning.oi.edu.eg"
+    }
+  },
+  "links": {
+    "privacy_policy_path": "/policy/",
+    "terms_path": "/policy/terms"
+  },
+  "web_card_allowed_domains": [
+    "oi.edu.eg",
+    "elearning.oi.edu.eg",
+    "student.oi.edu.eg"
+  ],
+  "card_send_fields_whitelist": [
+    "student_code",
+    "student_name",
+    "class_name"
+  ],
+  "theme": {
+    "light": {
+      "daylight": "#F4F7FC",
+      "surface": "#FFFFFF",
+      "ink": "#0E1A33",
+      "ink_soft": "#5B6884",
+      "line": "#E3E8F2",
+      "primary": "#2F6BFF",
+      "amber": "#FFB020",
+      "success": "#17A673",
+      "danger": "#E5384F"
+    },
+    "dark": {
+      "daylight": "#0A1226",
+      "surface": "#121C38",
+      "surface2": "#1A2748",
+      "ink": "#EAF0FF",
+      "ink_soft": "#9AA8CC",
+      "line": "#24335C",
+      "primary": "#5A8BFF",
+      "amber": "#FFB020",
+      "success": "#2FC08B",
+      "danger": "#F0566B"
+    },
+    "spectrum": {
+      "blue": "#2F6BFF",
+      "cyan": "#00AEEF",
+      "teal": "#12B5A6",
+      "green": "#22B573",
+      "amber": "#FFB020",
+      "coral": "#FF6B57",
+      "rose": "#E5489B",
+      "violet": "#7C5CFF"
+    },
+    "font_family": "Readex Pro"
+  },
+  "features": {
+    "assistant_enabled": true,
+    "attendance_enabled": true,
+    "exams_enabled": true,
+    "pdf_tools_enabled": true,
+    "device_transfer_enabled": false
+  },
+  "login": {
+    "username_label_ar": "الرقم القومي",
+    "username_hint_ar": "14 رقمًا، نفس اسم المستخدم في بوابة الطالب",
+    "username_regex": "^[0-9]{14}$",
+    "password_label_ar": "كلمة المرور"
+  },
+  "policy": {
+    "controller_ar": "إدارة المعهد",
+    "retention_ar": "تُحفَظ بيانات الحساب ما دام الطالب مقيدًا، ويمكنه طلب حذفها من داخل التطبيق في أي وقت. سجلات الحضور تحتفظ بها إدارة المعهد بدون ربطها باسم الطالب بعد الحذف.",
+    "updated_ar": "2026"
+  }
+}
